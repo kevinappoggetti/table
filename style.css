@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #808080;
+}
+
+.none {
+    display: none;
+}
+
+#progress {
+    background-color: teal;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    padding-top: 50px;
+    width: 300px;
+}
+
+hr {
+    width: 87%;
+    margin-top: 46px;
+    border: 2px solid #276873;
+}
+
+.percent-count {
+    width:450px;
+    height:50px;
+    margin:100px auto;
+    font-size:50px;
+    text-align:center;
+    color:#fff
+  }
+
+.progress-bar{
+    width:506px;
+    height:26px;
+    background-color:#bbb;
+    border-radius:13px;
+    padding:3px;
+    margin:50px auto;
+}
+
+.progress{
+    width:20px;
+    height:20px;
+    border-radius: 10px;
+    background-color:dodgerblue;
+}
+
+tbody tr td:nth-child(1) a {
+    /* overflow: hidden; */
+    /* width:150px; */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    /* text-overflow: ellipsis; */
+    /* white-space: nowrap; */
+    /* height: 18px;  */
+    width: 100px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* tbody tr td:nth-child(6) {
+    overflow: hidden;
+    width:100px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}  */
+
+.address {
+    padding: 40px;
+}
+
+.myButton {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.flex {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 4px 6px 8px #898e8f;
+    border: 2px solid black;
+}
+
+.content-table thead tr {
+    background-color: #F4F4F4;
+    color: #818181;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid white;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+     background-color: #F4F4F4;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #818181 ;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #276873;
+}
+
+.content-table tbody tr:nth-of-type(even) a {
+    color: #276873;
+}
+
+.content-table tbody tr:nth-of-type(odd) a {
+    color: #808080;
+}
+
+ /* .ellipse {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    width: 150px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}  */
+
+ /* .ellipse1 {
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline;
+}  */

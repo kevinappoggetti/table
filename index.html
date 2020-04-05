@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.28/moment-timezone-utils.js" integrity="sha256-zLrg2KxX9qHiRBQN5XIn1kiPMSF/66mTk6NEYd6R+fQ=" crossorigin="anonymous"></script> -->
+    <title>Controllo Address</title>
+    <link rel="icon" href="wallet.bmp">
+</head>
+<body>
+    <!-- Load -->
+    <div id="percentCount" class="percent-count">100% test</div>
+        <div class="progress-bar" id="progress-bar">
+          <div class="progress" id=progress></div>
+        </div>
+    <!-- Fine load -->
+    <!-- Header -->
+        <header>
+            <img src="block.bmp" alt="">
+            <img src="wester.bmp" alt="">
+        </header>
+    <!-- /Header -->
+    <!-- Inizio Table  -->
+    <div class="flex" id="flex">
+        <div class="address">
+            <a href="https://ropsten.etherscan.io/address/0x358006fFFF0bC35aad27aF23e78c8602A07BEe9F" class="myButton">Address 1</a>
+        </div>
+        <table class="content-table" id="tabella1">
+            <thead>
+                <tr>
+                    <th scope="col">Txn Hash</th>
+                    <th scope="col">Block</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">From</th>
+                    <th scope="col">To</th>
+                    <th scope="col">Value</th>
+                    <th scope="col">Txn Fee</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class='active-row'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class='active-row'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class='active-row'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class='active-row'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class='active-row'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+
+        </table>
+        <hr>
+        <div class="address">
+            <a href="https://ropsten.etherscan.io/address/0x4563af7E83c73851C6a190CE8430593643dA91F3" class="myButton">Address 2</a>
+        </div>
+        <table class="content-table" id="tabella2">
+            <thead>
+                <tr>
+                    <th scope="col">Txn Hash</th>
+                    <th scope="col">Block</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">From</th>
+                    <th scope="col">To</th>
+                    <th scope="col">Value</th>
+                    <th scope="col">Txn Fee</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class='active-row'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class='active-row'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class='active-row'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class='active-row'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class='active-row'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+
+        </table>
+        <hr>
+        <div class="address">
+            <a href="https://ropsten.etherscan.io/address/0x6ce4B231c7aB84e6AE3570Fa4ccE81A24f54564f" class="myButton">Address 3</a>
+        </div>
+        <table class="content-table" id="tabella3">
+            <thead>
+                <tr>
+                    <th scope="col">Txn Hash</th>
+                    <th scope="col">Block</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">From</th>
+                    <th scope="col">To</th>
+                    <th scope="col">Value</th>
+                    <th scope="col">Txn Fee</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class='active-row'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class='active-row'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class='active-row'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class='active-row'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class='active-row'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+
+        </table>
+        <hr>
+        <div class="address">
+            <a href="https://ropsten.etherscan.io/address/0x210bdbEF68Dd774dde24c17616D01AD3B0ce8649" class="myButton">Address Server</a>
+        </div>
+        <table class="content-table" id="tabella4">
+            <thead>
+                <tr>
+                    <th scope="col">Txn Hash</th>
+                    <th scope="col">Block</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">From</th>
+                    <th scope="col">To</th>
+                    <th scope="col">Value</th>
+                    <th scope="col">Txn Fee</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class='active-row'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class='active-row'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class='active-row'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class='active-row'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class='active-row'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+
+        </table>
+        <hr>
+        <div class="address">
+            <a href="https://ropsten.etherscan.io/token/0x7232b6D7e5A2f09611D3842bc75D80fE08738774" class="myButton">Address Smart Contract</a>
+        </div>
+        <table class="content-table" id="tabella5">
+            <thead>
+                <tr>
+                    <th scope="col">Txn Hash</th>
+                    <th scope="col">Block</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">From</th>
+                    <th scope="col">To</th>
+                    <th scope="col">Value</th>
+                    <th scope="col">Gas Used [Ether]</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class='active-row'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class='active-row'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class='active-row'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class='active-row'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class='active-row'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ellipse"></td>
+                    <td class="ellipse1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+
+        </table>
+        <hr>
+    </div>
+   <script src="js/script.js"></script>
+</body>
+</html>

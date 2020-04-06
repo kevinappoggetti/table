@@ -3,7 +3,7 @@ function progress() {
     var percent= document.getElementById('percentCount');
     var counter= 5;
     var progress= 25;
-    var id= setInterval(frame,600);
+    var id= setInterval(frame,5);
 
     function frame() {
         if(progress == 500 && counter == 100){
@@ -27,7 +27,7 @@ progress();
 $(document).ready(function(){
     var address = ['0x358006fFFF0bC35aad27aF23e78c8602A07BEe9F','0x4563af7E83c73851C6a190CE8430593643dA91F3','0x6ce4B231c7aB84e6AE3570Fa4ccE81A24f54564f','0x210bdbEF68Dd774dde24c17616D01AD3B0ce8649','0x7232b6D7e5A2f09611D3842bc75D80fE08738774'];
     var i=0;
-    var offset=10;
+    var offset=5;
     var arr=[];
     var macroarray=[]
     var k=0;
@@ -50,10 +50,13 @@ $(document).ready(function(){
             var blockNumber = data.result[j].blockNumber;
             var timeStamp = data.result[j].timeStamp;
             var date = new Date(timeStamp * 1000);
+            var year=date.getFullYear();
+            var month=date.getMonth()+1;
+            var day=date.getDate();
             var hours = date.getHours();
             var minutes = "0" + date.getMinutes();
             var seconds = "0" + date.getSeconds();
-            var formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
+            var formattedTime = day+'/'+month+'/'+year+' '+hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
             var from = data.result[j].from;
             var to =data.result[j].to;
             var value = data.result[j].value;
@@ -90,11 +93,13 @@ $(document).ready(function(){
             var blockNumber = data.result[j].blockNumber;
             var timeStamp = data.result[j].timeStamp;
             var date = new Date(timeStamp * 1000);
+            var year=date.getFullYear();
+            var month=date.getMonth()+1;
+            var day=date.getDate();
             var hours = date.getHours();
             var minutes = "0" + date.getMinutes();
             var seconds = "0" + date.getSeconds();
-            var formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
-
+            var formattedTime = day+'/'+month+'/'+year+' '+hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
             var from = data.result[j].from;
             var to = data.result[j].to;
             var value = data.result[j].value;
@@ -139,10 +144,10 @@ $(document).ready(function(){
       document.getElementById(tab).rows[3].cells[i].innerHTML=macroarray[index][i+14];
       document.getElementById(tab).rows[4].cells[i].innerHTML=macroarray[index][i+21];
       document.getElementById(tab).rows[5].cells[i].innerHTML=macroarray[index][i+28];
-      document.getElementById(tab).rows[6].cells[i].innerHTML=macroarray[index][i+35];
-      document.getElementById(tab).rows[7].cells[i].innerHTML=macroarray[index][i+42];
-      document.getElementById(tab).rows[8].cells[i].innerHTML=macroarray[index][i+49];
-      document.getElementById(tab).rows[9].cells[i].innerHTML=macroarray[index][i+56];
-      document.getElementById(tab).rows[10].cells[i].innerHTML=macroarray[index][i+63];
+      // document.getElementById(tab).rows[6].cells[i].innerHTML=macroarray[index][i+35];
+      // document.getElementById(tab).rows[7].cells[i].innerHTML=macroarray[index][i+42];
+      // document.getElementById(tab).rows[8].cells[i].innerHTML=macroarray[index][i+49];
+      // document.getElementById(tab).rows[9].cells[i].innerHTML=macroarray[index][i+56];
+      // document.getElementById(tab).rows[10].cells[i].innerHTML=macroarray[index][i+63];
     }
   }

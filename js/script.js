@@ -23,7 +23,6 @@ function progress() {
 
 progress();
 
-
 $(document).ready(function(){
 
     var address = ['0x358006fFFF0bC35aad27aF23e78c8602A07BEe9F','0x4563af7E83c73851C6a190CE8430593643dA91F3','0x6ce4B231c7aB84e6AE3570Fa4ccE81A24f54564f','0x210bdbEF68Dd774dde24c17616D01AD3B0ce8649','0x7232b6D7e5A2f09611D3842bc75D80fE08738774'];
@@ -41,8 +40,8 @@ $(document).ready(function(){
     var url2='https://api-ropsten.etherscan.io/api?module=account&action=tokentx&contractaddress='+address[i]+'&page=1&'+offset+'&sort=desc&apikey=YourApiKeyToken';
 
     if(i % 5 != 4){
-    //   console.log(address[i]);
-    console.log("i"+i);
+    //console.log(address[i]);
+    //console.log("i"+i);
       $.ajax({
         'url': url,
         'method':'GET',
@@ -67,13 +66,15 @@ $(document).ready(function(){
             var txFeeEther=(txFee/1000000000000000000).toFixed(4);
             arr.push("<a href=https://ropsten.etherscan.io/tx/"+txHash+">"+txHash+"</a>", blockNumber, formattedTime, from, to, valueEther, txFeeEther);
           }
-            console.log(arr);
+            //console.log(arr);
             macroarray[i]=arr;
 
             if(arr[1]!==undefined){
               printTable(macroarray,i);
             }
-            else{console.log("attenzione undefined!");}
+            // else{
+            //  console.log("undefined!");
+            // }
             arr= [];
             i = (i+1) % 5;
             k = k + 1;
@@ -84,9 +85,8 @@ $(document).ready(function(){
         })
     }
     else{
-      console.log("i"+i);
-
-    //   console.log(address[i]);
+      //console.log("i"+i);
+      //console.log(address[i]);
       $.ajax({
         'url':url2,
         'method':'GET',
@@ -115,7 +115,7 @@ $(document).ready(function(){
             if(arr[1]!==undefined){
               printTable(macroarray,i);
             }
-            else{console.log("attenzione undefined!");}
+            //else{console.log("attenzione undefined!");}
             arr= [];
             i= (i+1)%5;
             k= k + 1;
@@ -126,11 +126,6 @@ $(document).ready(function(){
 
         })
     }
-    var d = Date(Date.now());
-
-  // Converting the number of millisecond in date string
-    a = d.toString()
-    console.log(a);
     setTimeout(getTransactions,7500);
     }
 

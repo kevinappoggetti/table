@@ -24,13 +24,13 @@ header {
 }
 
 img {
-    padding-top: 50px;
+    padding-top: 10px;
     width: 300px;
 }
 
 hr {
-    width: 87%;
-    margin-top: 46px;
+    width: 90%;
+    margin-top: 10px;
     border: 2px solid #276873;
 }
 
@@ -59,15 +59,14 @@ hr {
     background-color:dodgerblue;
 }
 
+#address1 {
+    margin-top: -30px;
+}
+
 tbody tr td:nth-child(1) a {
-    /* overflow: hidden; */
-    /* width:150px; */
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    /* text-overflow: ellipsis; */
-    /* white-space: nowrap; */
-    /* height: 18px;  */
     width: 100px;
     overflow: hidden;
     position: relative;
@@ -76,16 +75,9 @@ tbody tr td:nth-child(1) a {
     white-space: nowrap;
 }
 
-/* tbody tr td:nth-child(6) {
-    overflow: hidden;
-    width:100px;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-}  */
 
 .address {
-    padding: 40px;
+    padding: 25px 0 0 10px;
 }
 
 .myButton {
@@ -125,6 +117,7 @@ tbody tr td:nth-child(1) a {
     margin: 25px 0;
     font-size: 0.9em;
     min-width: 400px;
+    max-width: 95%;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 4px 6px 8px #898e8f;
@@ -167,23 +160,3 @@ tbody tr td:nth-child(1) a {
 .content-table tbody tr:nth-of-type(odd) a {
     color: #808080;
 }
-
- /* .ellipse {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    width: 150px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}  */
-
- /* .ellipse1 {
-    overflow: hidden;
-    position: relative;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    display: inline;
-}  */

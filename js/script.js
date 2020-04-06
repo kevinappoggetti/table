@@ -3,7 +3,7 @@ function progress() {
     var percent= document.getElementById('percentCount');
     var counter= 5;
     var progress= 25;
-    var id= setInterval(frame,5);
+    var id= setInterval(frame,720);
 
     function frame() {
         if(progress == 500 && counter == 100){
@@ -25,6 +25,7 @@ progress();
 
 
 $(document).ready(function(){
+
     var address = ['0x358006fFFF0bC35aad27aF23e78c8602A07BEe9F','0x4563af7E83c73851C6a190CE8430593643dA91F3','0x6ce4B231c7aB84e6AE3570Fa4ccE81A24f54564f','0x210bdbEF68Dd774dde24c17616D01AD3B0ce8649','0x7232b6D7e5A2f09611D3842bc75D80fE08738774'];
     var i=0;
     var offset=5;
@@ -41,6 +42,7 @@ $(document).ready(function(){
 
     if(i % 5 != 4){
     //   console.log(address[i]);
+    console.log("i"+i);
       $.ajax({
         'url': url,
         'method':'GET',
@@ -60,17 +62,18 @@ $(document).ready(function(){
             var from = data.result[j].from;
             var to =data.result[j].to;
             var value = data.result[j].value;
-            var valueEther= value/1000000000000000000;
-            if(valueEther<0.000001){valueEther=0;}
+            var valueEther= (value/1000000000000000000).toFixed(4);
             var txFee = data.result[j].gasPrice * data.result[j].gasUsed; //Da convertire in Ether
-            var txFeeEther=txFee/1000000000000000000;
-            if(txFeeEther < 0.000001){txFeeEther = 0;}
+            var txFeeEther=(txFee/1000000000000000000).toFixed(4);
             arr.push("<a href=https://ropsten.etherscan.io/tx/"+txHash+">"+txHash+"</a>", blockNumber, formattedTime, from, to, valueEther, txFeeEther);
           }
-            // console.log(arr);
+            console.log(arr);
             macroarray[i]=arr;
-            // console.log("i"+i);
-            printTable(macroarray,i);
+
+            if(arr[1]!==undefined){
+              printTable(macroarray,i);
+            }
+            else{console.log("attenzione undefined!");}
             arr= [];
             i = (i+1) % 5;
             k = k + 1;
@@ -81,8 +84,8 @@ $(document).ready(function(){
         })
     }
     else{
+      console.log("i"+i);
 
-      //moment().startOf('day').fromNow();
     //   console.log(address[i]);
       $.ajax({
         'url':url2,
@@ -104,16 +107,15 @@ $(document).ready(function(){
             var to = data.result[j].to;
             var value = data.result[j].value;
             var gasUsed = data.result[j].gasUsed;
-            var gasUsedEther = gasUsed / 1000000000000000000;
-            if (gasUsedEther < 0.00001) {
-              gasUsedEther = 0;
-            }
+            var gasUsedEther = (gasUsed / 1000000000000000000).toFixed(4);
             arr.push("<a href=https://ropsten.etherscan.io/tx/"+txHash+">"+txHash+"</a>", blockNumber, formattedTime, from, to, value, gasUsedEther);
           }
             // console.log(arr);
             macroarray[i]=arr;
-            // console.log("i"+i);
-            printTable(macroarray,i);
+            if(arr[1]!==undefined){
+              printTable(macroarray,i);
+            }
+            else{console.log("attenzione undefined!");}
             arr= [];
             i= (i+1)%5;
             k= k + 1;
@@ -124,7 +126,12 @@ $(document).ready(function(){
 
         })
     }
-    setTimeout(getTransactions,10000);
+    var d = Date(Date.now());
+
+  // Converting the number of millisecond in date string
+    a = d.toString()
+    console.log(a);
+    setTimeout(getTransactions,7500);
     }
 
   });

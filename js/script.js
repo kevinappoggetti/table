@@ -64,7 +64,7 @@ $(document).ready(function(){
             var valueEther= (value/1000000000000000000).toFixed(4);
             var txFee = data.result[j].gasPrice * data.result[j].gasUsed; //Da convertire in Ether
             var txFeeEther=(txFee/1000000000000000000).toFixed(4);
-            arr.push("<a href=https://ropsten.etherscan.io/tx/"+txHash+">"+txHash+"</a>", blockNumber, formattedTime, from, to, valueEther, txFeeEther);
+            arr.push("<a target='_blank' href=https://ropsten.etherscan.io/tx/"+txHash+">"+txHash+"</a>", blockNumber, formattedTime, from, to, valueEther, txFeeEther);
           }
             //console.log(arr);
             macroarray[i]=arr;
